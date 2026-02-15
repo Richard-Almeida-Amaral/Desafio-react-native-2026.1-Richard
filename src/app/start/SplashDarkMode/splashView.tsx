@@ -22,9 +22,9 @@ export const GradientText = (props) => {
 export function SplashView() {
   return (
     <ImageBackground 
-    source={require("@/assets/images/siteImages/KomiImpactBackground.jpg")} 
-    style={styles.background}
-    resizeMode="cover">
+      source={require("@/assets/images/siteImages/KomiImpactBackground.jpg")} 
+      style={styles.background}
+      resizeMode="cover">
     <View style={styles.overlay}>    
       <StatusBar barStyle="light-content" translucent backgroundColor="transparent"/>
       <View style={styles.container}>

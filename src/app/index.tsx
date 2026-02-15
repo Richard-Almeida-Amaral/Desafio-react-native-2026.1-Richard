@@ -1,5 +1,5 @@
-import { SplashView } from "./start/SplashDarkMode/splashView";
+import { DarkPageDefaultView } from "./auxiliar/DarkMode/DarkPageDefaultView";
 
 export default function SplashScreen() {
-  return <SplashView />;
+  return <DarkPageDefaultView />;
 }
