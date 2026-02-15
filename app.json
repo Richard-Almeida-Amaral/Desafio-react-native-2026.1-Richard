@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "DesafioTecnologiaV1",
-    "slug": "DesafioTecnologiaV1",
+    "name": "Komi Impact",
+    "slug": "KomiImpact",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "desafiotecnologiav1",
+    "icon": "./src/assets/images/siteImages/KomiImpactLogo.png",
+    "scheme": "komiimpact",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -13,32 +13,33 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#2E2542",
+        "foregroundImage": "./src/assets/images/siteImages/KomiImpactLogo.png",
+        "backgroundImage": "./src/assets/images/siteImages/KomiImpactLogo.png",
+        "monochromeImage": "./src/assets/images/siteImages/KomiImpactLogo.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./src/assets/images/siteImages/KomiImpactLogo.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./src/assets/images/siteImages/KomiImpactLogo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#F2F1F6",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#2E2542"
           }
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true,
