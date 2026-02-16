@@ -5,10 +5,12 @@ import MaskedView from '@react-native-masked-view/masked-view';
 import { styles } from "./styles";
 import { Colors } from "@/theme/colors";
 
-export function InputFormView() {
+export function InputFormView(props: InputFormView) {
     return (
-        <Text style={styles.text}>
-            Componente
+        <View style={styles.formContainer}>
+        <Text style={styles.formText}>
+            {props.formPlaceholder}
         </Text>
+        </View>
     );
 }
