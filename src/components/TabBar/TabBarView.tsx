@@ -4,18 +4,28 @@ import { LinearGradient } from 'expo-linear-gradient';
 import MaskedView from '@react-native-masked-view/masked-view';
 import { styles } from "./styles";
 import { Colors } from "@/theme/colors";
+import { Ionicons } from "@expo/vector-icons";
 
 export function TabBarView() {
     return (
         <View style={styles.container}>
-            <View style={styles.homeButton}>
-                <View style={styles.homeIcon}></View>
-                <Text style={styles.homeText}> Home </Text>
+            <View style={styles.button}>
+                <Ionicons name="home-outline" size={30} color="#F2F1F6"></Ionicons>
+                <Text style={styles.text}> Home </Text>
             </View>
-            <View style={styles.buildButton}></View>
+            <View style={styles.button}>
+                <Ionicons name="bookmarks-outline" size={30} color="#F2F1F6"></Ionicons>
+                <Text style={styles.text}> Builds </Text>
+            </View>
             <Image source={require("@/assets/images/siteImages/KomiImpactLogo.png")} style={styles.logoImage}/>
-            <View style={styles.contactsButton}></View>
-            <View style={styles.userButton}></View>
+            <View style={styles.button}>
+                <Ionicons name="chatbubbles-outline" size={30} color="#F2F1F6"></Ionicons>
+                <Text style={styles.text}> Contato </Text>
+            </View>
+            <View style={styles.button}>
+                <Ionicons name="person-circle-outline" size={30} color="#F2F1F6"></Ionicons>
+                <Text style={styles.text}> Login </Text>
+            </View>
         </View>
     );
 }
