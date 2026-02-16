@@ -31,9 +31,7 @@ export function LoginView() {
             <View style={styles.container}>
                 <View style={styles.topPage}></View>
                 <View style={styles.logoConteiner}>
-                <Image
-                source={require("@/assets/images/siteImages/KomiImpactLogo.png")}
-                style={styles.logoImage}/>
+                <Image source={require("@/assets/images/siteImages/KomiImpactLogo.png")} style={styles.logoImage}/>
                 <GradientText style={styles.title}>KOMI IMPACT</GradientText>
                 </View>
                 <View style={styles.formsContainer}>

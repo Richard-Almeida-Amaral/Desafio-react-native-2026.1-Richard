@@ -5,6 +5,7 @@ import MaskedView from '@react-native-masked-view/masked-view';
 import { styles } from "./styles";
 import { Colors } from "@/theme/colors";
 import { CardContactsView } from "@/components/CardContacts/CardContactsView"
+import { TabBarView } from "@/components/TabBar/TabBarView"
 
 export function ContactView() {
     return (
@@ -22,7 +23,7 @@ export function ContactView() {
                     <CardContactsView title="Instagram" subtitle="@komi.impact" iconName="logo-instagram"></CardContactsView>
                     <CardContactsView title="X/Twitter" subtitle="@komi.impact" iconName="logo-x"></CardContactsView>
                 </View>
-                <View style={styles.tabBarPlaceholder}></View>
+                <TabBarView></TabBarView>
 
 
             </View>

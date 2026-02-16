@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
         backgroundColor: "rgba(46, 37, 66, 0.80)",
     },
     container: {
-    flex: 1,
+        flex: 1,
         width: "100%",
         height: "100%",
         justifyContent: "center",
