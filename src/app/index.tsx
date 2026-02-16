@@ -1,5 +1,5 @@
-import { DarkPageDefaultView } from "./auxiliar/DarkMode/DarkPageDefaultView";
+import { LoginView } from "./auth/Login/loginView";
 
 export default function SplashScreen() {
-  return <DarkPageDefaultView />;
+  return <LoginView />;
 }

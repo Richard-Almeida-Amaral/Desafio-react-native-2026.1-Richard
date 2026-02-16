@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import MaskedView from '@react-native-masked-view/masked-view';
 import { styles } from "./styles";
 import { Colors } from "@/theme/colors";
+import { InputFormView } from "@/components/InputForm/InputFormView"
 
 export function LoginView() {
     return (
@@ -16,7 +17,7 @@ export function LoginView() {
             <View style={styles.container}>
 
             <Text style={styles.textPlaceholder}>Página padrão</Text>
-
+            
 
             </View>
         </View>
