@@ -1,5 +1,5 @@
-import { BuildsView } from "./tabs/Builds/buildsView";
+import { HomeView } from "./tabs/Home/homeView";
 
 export default function SplashScreen() {
-  return <BuildsView />;
+  return <HomeView />;
 }
