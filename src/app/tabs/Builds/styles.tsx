@@ -18,6 +18,12 @@ export const styles = StyleSheet.create({
         width: "100%",
         height: height * 0.1,
     },
+
+    content:{
+        width: "100%",
+        height: height * 0.8,
+    },
+
     container: {
         flex: 1,
         width: "100%",
@@ -25,18 +31,15 @@ export const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
     },
-    homeContainer: {
-        width: "100%",
-        height: height * 0.8,
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: width * 0.1,
+
+    buildsList: {
+        flex: 1,
+        
     },
-    textPlaceholder: {
-        fontFamily: "FontTitleBold",
-        fontSize: 40,
-        color: Colors.white_1,
-        height: height * 0.8,
+
+    buildsContent: {
         alignItems: "center",
+        paddingVertical: 20,
+        gap: 16,
     },
 });

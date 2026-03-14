@@ -6,6 +6,7 @@ export const Colors = {
     white_1: "#F2F1F6",
     gold_1: "#C8A45D",
     gold_2: "#E6CF8B",
+    gold_3: "#D3AF37",
     red_1: "#7A2E3A",
     blue_1: "#5C6FA3",
 };

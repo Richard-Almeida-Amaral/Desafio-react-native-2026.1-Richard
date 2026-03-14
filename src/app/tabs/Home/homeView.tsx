@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import MaskedView from '@react-native-masked-view/masked-view';
 import { styles } from "./styles";
 import { Colors } from "@/theme/colors";
+import { TabBarView } from "@/components/TabBar/TabBarView";
 
 export function HomeView() {
     return (
@@ -14,11 +15,13 @@ export function HomeView() {
         <View style={styles.overlay}>    
             <StatusBar barStyle="light-content" translucent backgroundColor="transparent"/>
             <View style={styles.container}>
+                <View style={styles.topPage}></View>
 
-            <Text style={styles.textPlaceholder}>Página padrão</Text>
+                <Text style={styles.textPlaceholder}>Página padrão</Text>
 
-
+                <TabBarView></TabBarView>
             </View>
+            
         </View>
         </ImageBackground>
     );

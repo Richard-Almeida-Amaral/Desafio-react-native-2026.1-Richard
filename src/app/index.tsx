@@ -1,5 +1,5 @@
-import { SplashView } from "./start/SplashDarkMode/splashView";
+import { BuildsView } from "./tabs/Builds/buildsView";
 
 export default function SplashScreen() {
-  return <SplashView />;
+  return <BuildsView />;
 }
