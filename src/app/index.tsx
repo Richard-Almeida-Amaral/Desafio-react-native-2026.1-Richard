@@ -1,5 +1,5 @@
-import { HomeView } from "./tabs/Home/homeView";
+import { SplashView } from "@/pages/start/SplashDarkMode/splashView";
 
-export default function SplashScreen() {
-  return <HomeView />;
+export default function IndexScreen() {
+  return <SplashView />;
 }

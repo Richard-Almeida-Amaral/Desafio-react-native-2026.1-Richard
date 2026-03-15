@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import MaskedView from '@react-native-masked-view/masked-view';
 import { styles } from "./styles";
 import { Colors } from "@/theme/colors";
+import { router } from "expo-router";
 
 export const GradientText = (props) => {
   return (
@@ -36,7 +37,7 @@ export function SplashView() {
           <GradientText style={styles.title}>KOMI IMPACT</GradientText>
         </View>
         <View style={styles.formsContainer}>
-            <TouchableOpacity style={styles.buttonGuest}>
+            <TouchableOpacity style={styles.buttonGuest} onPress={()=>{router.push("/tabs/Home")}}>
               <Text style={styles.buttonText}>ENTRAR COMO CONVIDADO</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonLogin}>
