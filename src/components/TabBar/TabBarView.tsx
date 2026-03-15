@@ -10,23 +10,23 @@ import { router } from "expo-router";
 export function TabBarView() {
     return (
         <View style={styles.container}>
-            <View style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={()=>{router.push("/tabs/Home")}}>
                 <Ionicons name="home-outline" size={30} color="#F2F1F6"></Ionicons>
                 <Text style={styles.text}> Home </Text>
-            </View>
-            <TouchableOpacity style={styles.button}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button} onPress={()=>{router.push("/tabs/Builds")}}>
                 <Ionicons name="bookmarks-outline" size={30} color="#F2F1F6"></Ionicons>
                 <Text style={styles.text}> Builds </Text>
             </TouchableOpacity>
             <Image source={require("@/assets/images/siteImages/KomiImpactLogo.png")} style={styles.logoImage}/>
-            <View style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={()=>{router.push("/tabs/Contacts")}}>
                 <Ionicons name="chatbubbles-outline" size={30} color="#F2F1F6"></Ionicons>
                 <Text style={styles.text}> Contato </Text>
-            </View>
-            <View style={styles.button}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button} onPress={()=>{router.push("/auth/Login")}}>
                 <Ionicons name="person-circle-outline" size={30} color="#F2F1F6"></Ionicons>
                 <Text style={styles.text}> Login </Text>
-            </View>
+            </TouchableOpacity>
         </View>
     );
 }

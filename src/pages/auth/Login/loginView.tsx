@@ -5,6 +5,7 @@ import MaskedView from '@react-native-masked-view/masked-view';
 import { styles } from "./styles";
 import { Colors } from "@/theme/colors";
 import { InputFormView } from "@/components/InputForm/InputFormView"
+import { router } from "expo-router";
 
 export const GradientText = (props) => {
     return (
@@ -41,9 +42,11 @@ export function LoginView() {
                     <InputFormView formPlaceholder="Digite sua senha..."></InputFormView>
                     <View style={styles.registerForm}>
                         <Text style={styles.rigisterTitle}>Não possui reigistro?</Text>
+                        <TouchableOpacity onPress={()=>{router.push("/auth/Register")}}>
                         <Text style={styles.registerSubtitle}>Registre-se</Text>
+                        </TouchableOpacity>
                     </View>
-                    <TouchableOpacity style={styles.buttonLogin}>
+                    <TouchableOpacity style={styles.buttonLogin} onPress={()=>{router.push("/tabs/Home")}}>
                         <Text style={styles.buttonText}>LOGIN</Text>
                     </TouchableOpacity>
                 </View>

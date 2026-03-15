@@ -1,10 +1,10 @@
-import React from "react";
-import { View, Text, Image, ImageBackground, TouchableOpacity, StatusBar } from "react-native";
-import { LinearGradient } from 'expo-linear-gradient';
-import MaskedView from '@react-native-masked-view/masked-view';
-import { styles } from "./styles";
 import { Colors } from "@/theme/colors";
+import MaskedView from '@react-native-masked-view/masked-view';
+import { LinearGradient } from 'expo-linear-gradient';
 import { router } from "expo-router";
+import React from "react";
+import { Image, ImageBackground, StatusBar, Text, TouchableOpacity, View } from "react-native";
+import { styles } from "./styles";
 
 export const GradientText = (props) => {
   return (
@@ -40,7 +40,7 @@ export function SplashView() {
             <TouchableOpacity style={styles.buttonGuest} onPress={()=>{router.push("/tabs/Home")}}>
               <Text style={styles.buttonText}>ENTRAR COMO CONVIDADO</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.buttonLogin}>
+            <TouchableOpacity style={styles.buttonLogin} onPress={()=>{router.push("/auth/Login")}}>
               <Text style={styles.buttonText}>LOGIN</Text>
             </TouchableOpacity>
         </View>       

@@ -11,6 +11,7 @@ import { CardCharactersView } from "@/components/CardCharacters/CardCharactersVi
 import { CardContactsView } from "@/components/CardContacts/CardContactsView";
 import { CollapsibleCard } from "@/components/CollapsibleCard/CollapsibleCardView";
 import { CardCarouselView } from "@/components/CarouselCard/CarouselCardView";
+import { router } from "expo-router";
 
 export function HomeView() {
     return (
@@ -51,10 +52,10 @@ export function HomeView() {
                             </View>
                             <View style={styles.destaques}>
                                 <View style={styles.charactersCorrossel}>
-                                    <View style={styles.textContainer}>
+                                    <TouchableOpacity style={styles.textContainer} onPress={()=>router.push("/tabs/Builds")}>
                                         <Text style={styles.textHome}>BUILDS</Text>
                                         <Ionicons name={"chevron-forward-outline"} size={20} color={Colors.white_1} />
-                                    </View>
+                                    </TouchableOpacity>
                                     <ScrollView horizontal
                                         showsHorizontalScrollIndicator={false}
                                         contentContainerStyle={styles.carouselContent}>
@@ -82,10 +83,10 @@ export function HomeView() {
                                 </View>
 
                                 <View style={styles.contactsHome}>
-                                    <View style={styles.textContainer}>
+                                    <TouchableOpacity style={styles.textContainer} onPress={()=>router.push("/tabs/Contacts")}>
                                         <Text style={styles.textHome}>CONTATOS</Text>
                                         <Ionicons name={"chevron-forward-outline"} size={20} color={Colors.white_1} />
-                                    </View>
+                                    </TouchableOpacity>
                                     <CardContactsView title="Email" subtitle="komi.impact@contato.com" iconName="mail-outline"></CardContactsView>
                                     <CardContactsView title="Discord" subtitle="komi.impact/join" iconName="logo-discord"></CardContactsView>
                                     <CardContactsView title="Instagram" subtitle="@komi.impact" iconName="logo-instagram"></CardContactsView>
