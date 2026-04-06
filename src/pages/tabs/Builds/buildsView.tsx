@@ -7,6 +7,7 @@ import { Colors } from "@/theme/colors";
 import { CardCharactersView } from "@/components/CardCharacters/CardCharactersView"
 import { TabBarView } from "@/components/TabBar/TabBarView";
 import { characters } from "@/data/character";
+import { router } from "expo-router";
 
 export function BuildsView() {
     return (
@@ -27,12 +28,21 @@ export function BuildsView() {
                             keyExtractor={(item) => item.name}
                             contentContainerStyle={styles.buildsContent}
                             renderItem={({ item }) => (
-                                <CardCharactersView
-                                    name={item.name}
-                                    stars={item.stars}
-                                    avatar={item.avatar}
-                                    vision={item.vision}
-                                />
+                                <TouchableOpacity
+                                    onPress={() => {
+                                        router.push({
+                                            pathname: "/character/[name]",
+                                            params: { name: item.name },
+                                        });
+                                    }}
+                                >
+                                    <CardCharactersView
+                                        name={item.name}
+                                        stars={item.stars}
+                                        avatar={item.avatar}
+                                        vision={item.vision}
+                                    />
+                                </TouchableOpacity>
                             )}
                         />
                     </View>
