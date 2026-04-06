@@ -1,16 +1,24 @@
 import React from "react";
-import { View, Text, Image, ImageBackground, TouchableOpacity, StatusBar, TextInput, KeyboardAvoidingView } from "react-native";
-import { LinearGradient } from 'expo-linear-gradient';
-import MaskedView from '@react-native-masked-view/masked-view';
+import { View, TextInput } from "react-native";
 import { styles } from "./styles";
 import { Colors } from "@/theme/colors";
 
-export function InputFormView(props: InputFormView) {
+type InputFormProps = {
+    value: string;
+    onChangeText: (text: string) => void;
+    formPlaceholder: string;
+};
+
+export function InputFormView(props: InputFormProps) {
     return (
         <View style={styles.formContainer}>
-        <Text style={styles.formText}>
-            {props.formPlaceholder}
-        </Text>
+            <TextInput
+                style={styles.formText}
+                placeholder={props.formPlaceholder}
+                placeholderTextColor={Colors.purple_3}
+                value={props.value}
+                onChangeText={props.onChangeText}
+            />
         </View>
     );
 }
