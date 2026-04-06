@@ -46,7 +46,7 @@ export function LoginView() {
                         <Text style={styles.registerSubtitle}>Registre-se</Text>
                         </TouchableOpacity>
                     </View>
-                    <TouchableOpacity style={styles.buttonLogin} onPress={()=>{router.push("/tabs/Home")}}>
+                    <TouchableOpacity style={styles.buttonLogin} onPress={()=>{router.push("/auth/Dashboard")}}>
                         <Text style={styles.buttonText}>LOGIN</Text>
                     </TouchableOpacity>
                 </View>

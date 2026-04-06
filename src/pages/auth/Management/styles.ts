@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
 import { Colors } from "@/theme/colors";
-import { width, height } from "@/constants/Dimenions";
 
 export const styles = StyleSheet.create({
     background: {
@@ -20,21 +19,10 @@ export const styles = StyleSheet.create({
     height: "100%",
     justifyContent: "center",
     alignItems: "center",
-    gap: 60,
     },
-    textDashboard: {
+    textPlaceholder: {
     fontFamily: "FontTitleBold",
-    fontSize: 20,
+    fontSize: 40,
     color: Colors.white_1,
-    },
-    dashboardButton: {
-    backgroundColor: "rgba(75, 58, 106, 0.4)",
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: 16,
-    width: width * 0.4,
-    paddingVertical: 10,
-    borderWidth: 1,
-    borderColor: 'rgba(242, 241, 246, 0.2)',
     },
 });
